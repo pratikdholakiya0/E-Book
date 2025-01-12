@@ -199,7 +199,7 @@ i{
   width: 100%;
   height: 100vh;
   position: fixed;
-  top: -100%;
+  top: -110vh;
   z-index: var(--z-fixed);
   backdrop-filter: blur(10px);
   display: flex;
@@ -444,6 +444,12 @@ i{
   box-shadow: 0 0 15px gray;
   padding: 0.75rem 0;
   display: inherit;
+}
+
+@media (min-width: 500px) {
+  .newbook{
+    width: 10rem;
+  }
 }
 .newbook img{
   width: 110px;
