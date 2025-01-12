@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Responsive book website</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#"><i class="ri-book-3-line"></i>E-Book</a>
+            <div class="nav__menu">
+               <ul class="nav__list">
+                  <li class="nav__items">
+                     <a href="#home"><i class="ri-home-line"></i><span>Home</span></a>
+                  </li>
+                  <li class="nav__items">
+                     <a href="#featured"><i class="ri-book-3-line"></i><span>featured</span></a>
+                  </li>
+                  <li class="nav__items">
+                     <a href="#discount"><i class="ri-price-tag-3-line"></i><span>discount</span></a>
+                  </li>
+                  <li class="nav__items">
+                     <a href="#new"><i class="ri-bookmark-3-line"></i><span>New Books</span></a>
+                  </li>
+                  <li class="nav__items">
+                     <a href="#testimonial"><i class="ri-message-3-line"></i><span>testimonial</span></a>
+                  </li>
+               </ul>
+            </div>
+            <div class="nav__options">
+               <a href="#"><i class="ri-search-2-line searchIcon"></i></a>
+               <a href="#"><i class="ri-user-3-line login-button"></i></a>
+               <a href="#"><i class="ri-moon-line"></i></a>
+            </div>
+         </nav>
+      </header>
+
+      <!--==================== SEARCH ====================-->
+      <div class="search" id="search-content">
+         <i class="ri-close-line remove__search"></i>
+         <div class="search__bar">
+            <input type="text" class="search__input" placeholder="Search books...">
+            <button class="search__btn">Search</button>
+         </div>
+      </div>
+
+      <!--==================== LOGIN ====================-->
+      <div class="login grid" id="login-content">
+         <i class="ri-close-line remove__login"></i>
+         <div class="login__content">
+            <input type="text" class="login__input" placeholder="Email or phone number">
+            <input type="password" name="" id="login__input" class="login__input" placeholder="Password">
+            <input type="button" value="Login" class="login__btn">
+         </div>
+      </div>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__container grid container">
+               <div class="home__content">
+                  <h1>
+                     Select E-Books
+                  </h1>
+                  <span>
+                     find the best books from your favourite writters, explore hundreds of books with all possible categories, take advantage of possible categories, take advantage of 50% discount and much more.
+                  </span>
+
+                  <button>Explore Now</button>
+               </div>
+               <div class="swiper">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide article"><img src="assets/img/home-book-1.png" class="home__image" alt="Image 1"></div>
+                     <div class="swiper-slide article"><img src="assets/img/home-book-2.png" class="home__image" alt="Image 2"></div>
+                     <div class="swiper-slide article"><img src="assets/img/home-book-3.png" class="home__image" alt="Image 3"></div>
+                     <div class="swiper-slide article"><img src="assets/img/home-book-4.png" class="home__image" alt="Image 4"></div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== SERVICES ====================-->
+         <section class="services section">
+            <div class="services__container">
+               <div class="services__content">
+                  <i class="ri-truck-line"></i>
+                  <p>Free Shipping</p>
+                  <p>Order More Than $100</p>
+               </div>
+
+               <div class="services__content">
+                  <i class="ri-lock-2-line"></i>
+                  <p>Secure Payment</p>
+                  <p>100% Secure Payment</p>
+               </div>
+
+               <div class="services__content">
+                  <i class="ri-customer-service-2-line"></i>
+                  <p>24/7 Support</p>
+                  <p>Call us anytime</p>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== FEATURED ====================-->
+         <section class="featured section" id="featured">
+            <div class="featured__container">
+               Featured Books
+            </div>
+            <div class="swiper swiper__featured">
+               <div class="featured__wrapper swiper-wrapper">
+                  <div class="featured__slide swiper-slide">
+                     <div class="featured_img__container">
+                        <img src="assets/img/book-1.png" alt="Image 1">
+                        <p>Featured book</p>
+                        <p>$11.99</p>
+                        <button>Add to cart</button>
+                     </div>
+                  </div>
+                  <div class="featured__slide swiper-slide">
+                     <div class="featured_img__container">
+                        <img src="assets/img/book-2.png" alt="Image 1">
+                        <p>Featured book</p>
+                        <p>$11.99</p>
+                        <button>Add to cart</button>
+                     </div>
+                  </div>
+                  <div class="featured__slide swiper-slide">
+                     <div class="featured_img__container">
+                        <img src="assets/img/book-3.png" alt="Image 1">
+                        <p>Featured book</p>
+                        <p>$11.99</p>
+                        <button>Add to cart</button>
+                     </div>
+                  </div>
+                  <div class="featured__slide swiper-slide">
+                     <div class="featured_img__container">
+                        <img src="assets/img/book-4.png" alt="Image 1">
+                        <p>Featured book</p>
+                        <p>$11.99</p>
+                        <button>Add to cart</button>
+                     </div>
+                  </div>
+                  <div class="featured__slide swiper-slide">
+                     <div class="featured_img__container">
+                        <img src="assets/img/book-5.png" alt="Image 1">
+                        <p>Featured book</p>
+                        <p>$11.99</p>
+                        <button>Add to cart</button>
+                     </div>
+                  </div>
+                  <div class="featured__slide swiper-slide">
+                     <div class="featured_img__container">
+                        <img src="assets/img/book-6.png" alt="Image 1">
+                        <p>Featured book</p>
+                        <p>$11.99</p>
+                        <button>Add to cart</button>
+                     </div>
+                  </div>
+                  <div class="featured__slide swiper-slide">
+                     <div class="featured_img__container">
+                        <img src="assets/img/book-7.png" alt="Image 1">
+                        <p>Featured book</p>
+                        <p>$11.99</p>
+                        <button>Add to cart</button>
+                     </div>
+                  </div>
+                  <div class="featured__slide swiper-slide">
+                     <div class="featured_img__container">
+                        <img src="assets/img/book-8.png" alt="Image 1">
+                        <p>Featured book</p>
+                        <p>$11.99</p>
+                        <button>Add to cart</button>
+                     </div>
+                  </div>
+                  <div class="featured__slide swiper-slide">
+                     <div class="featured_img__container">
+                        <img src="assets/img/book-9.png" alt="Image 1">
+                        <p>Featured book</p>
+                        <p>$11.99</p>
+                        <button>Add to cart</button>
+                     </div>
+                  </div>
+               </div>
+               <!-- Optional navigation buttons -->
+               <div class="swiper-button-prev featured__prev"></div>
+               <div class="swiper-button-next featured__next"></div>
+            </div>
+         </section>
+
+         <!--==================== DISCOUNT ====================-->
+         <section class="discount section" id="discount">
+            <div class="discount__container">
+               <h1>Upto 50% Discount</h1>
+               <span>Take advantage of discount days and we have for you ,buy your books from your favorite books from your favorite writters, the more discount we have for you. </span>
+               <button class="discount__button">Shop Now</button>
+            </div>
+
+            <div class="discount__image">
+               <img src="assets/img/discount-book-1.png" alt="Image 1" class="img-1">
+               <img src="assets/img/discount-book-2.png" alt="Image 1" class="img-2">
+            </div>
+         </section>
+
+         <!--==================== NEW BOOKS ====================-->
+         <section class="new section" id="new">
+            <div class="new__container"><h1>New Books</h1></div>
+            <div class="newBook__container">
+               <div class="newbook">
+                  <img src="assets/img/book-1.png" alt="Image 1">
+                  <div class="newbook__content">
+                     <p>New Book</p>
+                     <p>$11.99</p>
+                  </div>
+               </div>
+               <div class="newbook">
+                  <img src="assets/img/book-2.png" alt="Image 1">
+                  <div class="newbook__content">
+                     <p>New Book</p>
+                     <p>$11.99</p>
+                  </div>
+               </div>
+               <div class="newbook">
+                  <img src="assets/img/book-3.png" alt="Image 1">
+                  <div class="newbook__content">
+                     <p>New Book</p>
+                     <p>$11.99</p>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== JOIN ====================-->
+         <section class="join section">
+            <h2>Subscribe To Receive The Latest Updates</h2>
+            <input type="text" placeholder="Enter email">
+            <input type="button" value="Subscribe">
+         </section>
+
+         <!--==================== TESTIMONIAL ====================-->
+         <section class="testimonial section" id="testimonial">
+            <div class="swiper">
+               <!-- Additional required wrapper -->
+               <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                     <div class="review">
+                        <img src="assets/img/testimonial-perfil-1.png" alt="Image 1">
+                        <p>Palak</p>
+                        <p>Best website to buy books,the purchase is very easy to make has great discount</p>
+                     </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                     <div class="review">
+                        <img src="assets/img/testimonial-perfil-2.png" alt="Image 1">
+                        <p>Patrik Batman</p>
+                        <p>Best website to buy books,the purchase is very easy to make has great discount</p>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="review">
+                        <img src="assets/img/testimonial-perfil-3.png" alt="Image 1">
+                        <p>Sahiti</p>
+                        <p>Best website to buy books,the purchase is very easy to make has great discount</p>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="review">
+                        <img src="assets/img/testimonial-perfil-4.png" alt="Image 1">
+                        <p>Akash</p>
+                        <p>Best website to buy books,the purchase is very easy to make has great discount</p>
+                     </div>
+                  </div>
+               </div>
+               <!-- If we need pagination -->
+
+               <div class="swiper-button-prev testimonial__prev"></div>
+               <div class="swiper-button-next testimonial__next"></div>
+            </div>
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__main">
+            <i class="ri-book-3-line"> E Book</i>
+            <p>Find and explore the best E-Books from all your favorite writters.</p>
+         </div>
+         <div class="grid footer__common__data">
+            <div class="footer__data">
+               <h4>About</h4>
+               <p>Award</p>
+               <p>FAQS</p>
+               <p>Privacy Policy</p>
+               <p>Terms of services</p>
+            </div>
+            <div class="footer__data">
+               <h4>Company</h4>
+               <p>Blogs</p>
+               <p>community</p>
+               <p>Our team</p>
+               <p>Help center</p>
+            </div>
+            <div class="footer__data">
+               <h4>contacts</h4>
+               <p>Av, Hacienda Lima 4321 Peru</p>
+            </div>
+            <div class="footer__data">
+               <h4>Social</h4>
+               <div class="social">
+                  <i class="ri-facebook-circle-line"></i>
+                  <i class="ri-instagram-line"></i>
+                  <i class="ri-twitter-x-line"></i>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src=""></script>
+
+      <!--=============== SWIPER JS ===============-->
+      <script src="assets/js/swiper-bundle.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
