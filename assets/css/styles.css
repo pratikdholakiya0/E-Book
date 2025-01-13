@@ -152,6 +152,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: var(--z-fixed);
 }
 i{
   color: var(--first-color);
@@ -187,9 +188,12 @@ i{
     font-size: 1.25rem;
     font-weight: 900;
   }
+
+  .newbook{
+    max-width: 16rem;
+  }
 }
 /* Add shadow header */
-
 
 /* Active link */
 
@@ -231,7 +235,7 @@ i{
 /*=============== LOGIN ===============*/
 .login{
   position: fixed;
-  top: -110vh;
+  top: -100%;
   left: 0;
   width: 100%;
   height: 100vh;
@@ -481,7 +485,8 @@ i{
     width: 90%;
     padding: 0.5rem;
   }
-  & input[type=button]{
+  & button{
+    width: 90%;
     padding: 0.5rem;
     background-color: var(--first-color);
     color: var(--white-color);
@@ -517,6 +522,7 @@ i{
 /*=============== FOOTER ===============*/
 
 footer{
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -558,14 +564,23 @@ footer{
 }
 
 /*=============== SCROLL UP ===============*/
-
-
+.up{
+  width: 2rem;
+  line-height: 2rem;
+  border-radius: 50%;
+  background: var(--first-color);
+  text-align: center;
+  position: relative;
+  left: 95%;
+}
+.up i{
+  color: var(--white-color);
+}
 /* Show Scroll Up */
 
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-
 
 /* For medium devices */
 @media (min-width: 700px) {
@@ -611,6 +626,9 @@ footer{
     width: 20rem;
   }
   .join input{
+    width: 20rem;
+  }
+  .join button{
     width: 20rem;
   }
   .testimonial .swiper{
@@ -661,4 +679,46 @@ footer{
   .testimonial .swiper{
     width: 60%;
   }
+}
+
+/*-----dark theme------*/
+body.dark-theme{
+  background-color: rgba(18, 18, 18, 0.93);
+  color: var(--white-color);
+}
+header.dark-theme{
+  background-color: rgb(32, 32, 32);
+}
+.nav__list.dark-theme{
+  background-color: rgb(32, 32, 32);
+}
+h1.dark-theme{
+  color: var(--white-color);
+}
+h2.dark-theme{
+  color: var(--white-color);
+}
+h3.dark-theme{
+  color: var(--white-color);
+}
+h4.dark-theme{
+  color: var(--white-color);
+}
+p.dark-theme{
+  color: var(--white-color);
+}
+span.dark-theme{
+  color: var(--white-color);
+}
+a.dark-theme{
+  color: var(--white-color);
+}
+
+i.dark-theme{
+  color: var(--white-color);
+  font-weight: 100;
+}
+
+.newbook.dark-theme{
+  box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.20);
 }
