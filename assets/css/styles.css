@@ -209,7 +209,7 @@ i{
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-out;
 }
 .search__bar{
   display: flex;
@@ -244,7 +244,7 @@ i{
   align-items: center;
   z-index: var(--z-fixed);
   backdrop-filter: blur(10px);
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-out;
 }
 .login__content{
   display: inherit;
