@@ -25,7 +25,11 @@ document.querySelector(".remove__login").addEventListener("click", e => {
 /*=============== ADD SHADOW HEADER ===============*/
 
 
+/*=============== FEATURED SWIPER ===============*/
+/*=============== NEW SWIPER ===============*/
+/*=============== TESTIMONIAL SWIPER ===============*/
 /*=============== HOME SWIPER ===============*/
+
 const swiper = new Swiper('.swiper', {
     // Swiper Parameters
     loop: true, // Loop through slides
@@ -43,22 +47,62 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
-/*=============== FEATURED SWIPER ===============*/
-
-
-/*=============== NEW SWIPER ===============*/
-
-
-/*=============== TESTIMONIAL SWIPER ===============*/
 
 
 /*=============== SHOW SCROLL UP ===============*/ 
 
+const upButton = document.querySelector('.up');
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    })
+}
+upButton.addEventListener("click", () => {
+    scrollToTop();
+})
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
 
-/*=============== DARK LIGHT THEME ===============*/ 
+/*=============== DARK LIGHT THEME ===============*/
+const darkIcon = document.querySelector(".darkTheme-button");
 
+function selectTagAndStyle(tagName) {
+    let tag = document.querySelectorAll(`${tagName}`);
 
+    for (let i = 0; i < tag.length; i++) {
+        tag[i].classList.toggle("dark-theme");
+    }
+}
+
+function changeTheme() {
+    document.body.classList.toggle("dark-theme");
+    document.querySelector("header").classList.toggle("dark-theme");
+    selectTagAndStyle("h1")
+    selectTagAndStyle("h2")
+    selectTagAndStyle("h3")
+    selectTagAndStyle("h4")
+    selectTagAndStyle("span")
+    selectTagAndStyle("p")
+    selectTagAndStyle("i")
+    selectTagAndStyle("a")
+    selectTagAndStyle(".nav__list")
+    selectTagAndStyle(".newbook")
+    selectTagAndStyle("home-button")
+}
+
+let togle = false;
+darkIcon.addEventListener("click", e =>{
+    e.preventDefault();
+    if(!togle) {
+        darkIcon.classList.replace("ri-moon-line", "ri-sun-line");
+    }
+    else {
+        darkIcon.classList.replace("ri-sun-line", "ri-moon-line");
+    }
+    togle = !togle;
+    changeTheme();
+});
 /*=============== SCROLL REVEAL ANIMATION ===============*/
