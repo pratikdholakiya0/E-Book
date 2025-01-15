@@ -297,7 +297,7 @@ i{
   box-shadow: 1px 1px 20px #007aff;
 }
 .home__container .home__content p{
-  font-size: var(--ps-font-size);
+  font-size: var(--h3-font-size);
 }
 .swiper {
   width: 100%;
@@ -363,7 +363,7 @@ i{
         width: 220px;
       }
       & p{
-        font-size: var(--ps-font-size);
+        font-size: var(--h3-font-size);
       }
       & button{
         padding: 1rem 1.25rem;
@@ -405,7 +405,7 @@ i{
     font-size: var(--h1-font-size);
   }
   &span{
-    font-size: var(--ps-font-size);
+    font-size: var(--h3-font-size);
   }
 }
 
@@ -452,7 +452,7 @@ i{
 
 @media (min-width: 500px) {
   .newbook{
-    width: 10rem;
+    min-width: 10rem;
   }
 }
 .newbook img{
