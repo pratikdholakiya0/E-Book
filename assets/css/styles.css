@@ -259,9 +259,12 @@ i{
 .login__content input[type=button]{
   background: var(--title-color);
   color: var(--white-color);
+  box-shadow: 3px 3px 0 #007aff;
+  transition: all ease 0.3s;
 }
 .login__content input[type=button]:hover{
-  box-shadow: 3px 3px 0px #007aff;
+  translate : 3px 3px;
+  box-shadow: none;
 }
 /* Show login */
 .show-login{
